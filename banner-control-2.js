@@ -50,7 +50,7 @@ var defaultConsent = false;
 
 var onClickAccept = "granted";
 var onClickCustom = "normal";
-var onClickDeclined = "granted";
+var onClickDeclined = "denied";
 
 var onClickAcceptSecond = "granted";
 var onClickDeclinedSecond = "denied";
@@ -73,13 +73,13 @@ function gtag() {
 var consentValue = ["granted", "denied"];
 
 var consent = {
-	ad_storage: defaultConsent ? "granted" : 'denied',
-	ad_user_data: defaultConsent ? "granted" : 'denied',
-	ad_personalization: defaultConsent ? "granted" : 'denied',
-	analytics_storage: defaultConsent ? "granted" : 'denied',
-	functionality_storage: defaultConsent ? "granted" : 'denied',
-	personalization_storage: defaultConsent ? "granted" : 'denied',
-	unclassified_storage: defaultConsent ? "granted" : 'denied',
+	ad_storage: defaultConsent ? "denied" : 'denied',
+	ad_user_data: defaultConsent ? "denied" : 'denied',
+	ad_personalization: defaultConsent ? "denied" : 'denied',
+	analytics_storage: defaultConsent ? "denied" : 'denied',
+	functionality_storage: defaultConsent ? "denied" : 'denied',
+	personalization_storage: defaultConsent ? "denied" : 'denied',
+	unclassified_storage: defaultConsent ? "denied" : 'denied',
 	security_storage: defaultConsent ? "granted" : 'granted'  // New security_storage field
 }
 
